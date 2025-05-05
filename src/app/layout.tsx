@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Provider } from "@/components/ui/core/provider";
 import React, { PropsWithChildren } from "react";
 
 export const metadata: Metadata = {
@@ -10,10 +9,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning>
-        <Provider>{children}</Provider>
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
