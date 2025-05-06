@@ -1,9 +1,5 @@
-"use client";
+import { Navigation } from "@/app/components/navigation/navigation";
 
 export default function Page() {
-  return (
-    <>
-      <p>hello</p>
-    </>
-  );
+  return <Navigation />;
 }
